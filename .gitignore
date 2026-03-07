@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Node.js / Next.js
+site/node_modules/
+site/.next/
+site/out/
+site/.env.local
+
+# LinkedIn export (dados pessoais — não versionar)
+data/linkedin_export/
+data/linkedin.json
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+pipeline_output.txt

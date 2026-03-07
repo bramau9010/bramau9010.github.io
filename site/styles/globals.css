@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans;
+    @apply transition-colors duration-300;
+  }
+
+  ::selection {
+    @apply bg-brand-200 dark:bg-brand-800 text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 dark:text-white mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-500 dark:text-gray-400 mb-10;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800
+           rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium
+           bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300
+           border border-brand-200 dark:border-brand-800;
+  }
+
+  .badge-gray {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium
+           bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400;
+  }
+
+  .link-primary {
+    @apply text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300
+           transition-colors duration-150 underline-offset-2;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm
+           bg-brand-600 hover:bg-brand-700 text-white
+           transition-all duration-150 shadow-sm hover:shadow;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm
+           border border-gray-300 dark:border-gray-700
+           hover:border-brand-500 dark:hover:border-brand-500
+           text-gray-700 dark:text-gray-300
+           hover:text-brand-600 dark:hover:text-brand-400
+           transition-all duration-150;
+  }
+}
+
+/* Timeline connector */
+.timeline-line {
+  @apply absolute left-4 top-10 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800;
+}
+
+/* Code font for language badges */
+.font-mono {
+  font-family: 'IBM Plex Mono', 'Fira Code', monospace;
+}

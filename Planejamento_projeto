@@ -1,0 +1,488 @@
+# Prompt de Projeto — Sistema de IA para Site Pessoal Auto-Atualizável
+
+## Contexto Geral
+
+Estou desenvolvendo um **projeto de IA para construir e manter automaticamente meu site pessoal profissional**.  
+O objetivo é que o sistema **sincronize e atualize periodicamente informações do meu perfil profissional, acadêmico e técnico**, gerando um **site pessoal moderno, impactante e sempre atualizado**.
+
+Este site servirá como **hub central da minha presença profissional**, integrando dados de:
+
+- GitHub (projetos, atividade, repositórios)
+- LinkedIn (experiência profissional, formação, conquistas)
+- Produção técnica ou acadêmica
+- Interesses profissionais e acadêmicos
+- Projetos pessoais e estudos
+
+A ideia é criar **um agente de IA que automatize a manutenção dessas informações**, minimizando esforço manual e garantindo que o site reflita continuamente minha evolução profissional.
+
+O sistema deverá **rodar automaticamente (ex: mensalmente)**, verificar mudanças nas fontes de dados e atualizar o site quando necessário.
+
+---
+
+# Objetivo do Projeto
+
+Construir um **sistema automatizado baseado em IA** capaz de:
+
+1. **Coletar dados profissionais de diferentes fontes**
+2. **Atualizar automaticamente um site pessoal**
+3. **Destacar competências, projetos e trajetória**
+4. **Gerar uma apresentação profissional visualmente impactante**
+5. **Manter sincronização contínua com plataformas externas**
+
+O sistema deve priorizar:
+
+- **Automação**
+- **Baixa manutenção**
+- **Escalabilidade**
+- **Boa experiência de usuário (UX)**
+- **Deploy simples**
+
+---
+
+# Pilares do Projeto
+
+## 1 — Automação e Manutenção Simplificada
+
+O sistema deve exigir **mínima intervenção manual**.
+
+Requisitos principais:
+
+- Execução automática **mensal ou semanal**
+- Sincronização com:
+  - GitHub: https://github.com/bramau9010
+  - LinkedIn: https://www.linkedin.com/in/brayan-mauricio-rodriguez-garzon/
+  - Outras plataformas relevantes (web-site https://sites.google.com/view/brayanmauricio/about-me?authuser=1)
+- Atualização automática do conteúdo do site
+- Deploy automatizado após mudanças
+
+### Boas práticas
+
+- Usar **GitHub Actions ou Cron Jobs**
+- Versionar dados estruturados
+- Manter logs de atualização
+- Criar pipeline de atualização clara
+- EStudar o repossitorio https://github.com/shanraisshan/claude-code-best-practice, avaliar sua conveniencia e adotar melhores praticas
+
+
+Exemplo de fluxo:
+
+Scheduler
+↓
+Coleta dados externos
+↓
+Normalização e limpeza
+↓
+Atualização do conteúdo
+↓
+Build do site
+↓
+Deploy automático
+
+
+---
+
+## 2 — Apresentação Profissional de Alto Impacto
+
+O site deve funcionar como **portfólio profissional avançado**, com foco em:
+
+- clareza
+- narrativa profissional
+- apresentação de projetos
+- credibilidade técnica
+
+### Estrutura recomendada do site
+
+**Home**
+- breve apresentação
+- principais habilidades
+- links relevantes
+
+**Sobre**
+- trajetória profissional
+- formação
+- interesses acadêmicos
+
+**Projetos**
+- projetos GitHub destacados
+- descrição
+- tecnologias usadas
+- impacto
+
+**Experiência**
+- cargos
+- responsabilidades
+- resultados
+
+**Publicações / Estudos**
+- artigos
+- notebooks
+- estudos técnicos
+
+**Contato**
+- LinkedIn
+- GitHub
+- e-mail
+
+---
+
+# Fontes de Dados
+
+O sistema deve integrar automaticamente dados de:
+
+## GitHub
+
+Dados importantes:
+
+- Repositórios
+- Linguagens usadas
+- Stars
+- Commits recentes
+- README destacados
+
+Sugestões de uso:
+
+- destacar **projetos principais**
+- mostrar **tecnologias dominadas**
+- exibir **gráficos de atividade**
+
+API:
+
+https://api.github.com/users/{username}
+
+
+---
+
+## LinkedIn
+
+Informações relevantes:
+
+- experiência profissional
+- formação
+- certificações
+- conquistas
+
+Observação importante:
+
+LinkedIn não possui API pública aberta.
+
+Alternativas:
+
+- exportação manual ocasional
+- scraping controlado
+- armazenamento em JSON local
+- sincronização semiautomática
+
+---
+
+## Outras Fontes Recomendadas
+
+Sugestões adicionais para enriquecer o sistema:
+
+### Google Scholar
+Para produção acadêmica
+
+### ORCID
+Identificação acadêmica
+
+### Kaggle
+Projetos de dados
+
+### Medium / Blog
+Artigos técnicos
+
+### StackOverflow
+Reputação técnica
+
+---
+
+# Arquitetura Recomendada
+
+## Estrutura Geral
+
+/personal-site-ai
+/data
+github.json
+linkedin.json
+profile.json
+
+
+/agents
+    github_agent.py
+    linkedin_agent.py
+    profile_agent.py
+
+/site
+    frontend
+
+/pipelines
+    update_pipeline.py
+
+/deploy
+    railway.yml
+
+/agents
+    github_agent.py
+    linkedin_agent.py
+    profile_agent.py
+
+/site
+    frontend
+
+/pipelines
+    update_pipeline.py
+
+/deploy
+    railway.yml
+
+
+---
+
+# Agente de IA
+
+O agente terá funções principais:
+
+### 1 — Coleta de dados
+
+- APIs
+- scraping controlado
+- leitura de arquivos
+
+### 2 — Processamento
+
+- normalização
+- resumo de projetos
+- categorização de habilidades
+
+### 3 — Atualização de conteúdo
+
+- gerar markdown
+- atualizar páginas
+
+### 4 — Deploy
+
+- commit automático
+- push no GitHub
+- rebuild do site
+
+---
+
+# Pipeline de Atualização
+
+Pipeline recomendado:
+
+
+Trigger (cron mensal)
+
+Coleta dados
+
+Comparação com versão anterior
+
+Atualização do conteúdo
+
+Commit automático
+
+Deploy
+
+
+
+---
+
+# Tecnologias Recomendadas
+
+## Backend / Automação
+
+- Python
+- LangChain ou agentes simples
+- FastAPI (opcional)
+- GitHub Actions
+
+---
+
+## Frontend
+
+Recomendado:
+
+### Next.js
+
+Motivos:
+
+- SEO excelente
+- fácil deploy
+- integração com markdown
+- suporte a SSR
+
+Alternativas:
+
+- Astro
+- Hugo
+- Gatsby
+
+---
+
+## Deploy
+
+Como você mencionou Railway:
+
+### Railway
+
+Vantagens:
+
+- deploy rápido
+- CI/CD simples
+- integração com GitHub
+
+Alternativas:
+
+- Vercel
+- Netlify
+- Cloudflare Pages
+
+---
+
+# Armazenamento de Dados
+
+Manter dados intermediários estruturados em:
+
+
+
+
+
+JSON
+YAML
+Markdown
+
+
+
+Exemplo:
+
+profile.json
+projects.json
+experience.json
+skills.json
+
+
+
+---
+
+# Experiência do Usuário (UX)
+
+O site deve:
+
+- carregar rápido
+- ser mobile-friendly
+- ter navegação clara
+- destacar conquistas
+
+Sugestões de seções visuais:
+
+- timeline de carreira
+- projetos destacados
+- gráfico de tecnologias
+- atividades recentes
+
+---
+
+# Boas Práticas de Design
+
+### Design
+
+- minimalista
+- profissional
+- escaneável
+- foco em conteúdo
+
+### Tipografia
+
+- Inter
+- Source Sans
+- IBM Plex
+
+### Paleta
+
+- neutra
+- foco em legibilidade
+
+---
+
+# Segurança
+
+Boas práticas:
+
+- nunca expor tokens
+- usar variáveis de ambiente
+- limitar acesso a APIs
+
+---
+
+# Melhorias Futuras
+
+Possíveis extensões:
+
+### IA para curadoria de projetos
+
+Selecionar automaticamente projetos mais relevantes.
+
+### Geração automática de resumo profissional
+
+Atualizar bio automaticamente.
+
+### Blog técnico automático
+
+Transformar notebooks ou projetos em artigos.
+
+### Dashboard pessoal
+
+- commits
+- estudos
+- aprendizado
+
+---
+
+# Exemplo de Automação
+
+Fluxo completo:
+
+Cron job mensal
+↓
+GitHub API
+↓
+Atualização dos projetos
+↓
+Comparação com dados antigos
+↓
+Atualização do markdown
+↓
+Build do site
+↓
+Deploy automático no Railway
+
+
+
+---
+
+# Métricas de Sucesso
+
+O sistema deve atingir:
+
+- atualização automática do site
+- manutenção mínima
+- deploy automático
+- apresentação profissional clara
+- destaque automático de novos projetos
+
+---
+
+# Resultado Esperado
+
+Um **site pessoal inteligente**, que funcione como:
+
+- portfólio profissional
+- hub de projetos
+- vitrine técnica
+- presença digital consolidada
+
+com **atualização automática e baixa manutenção**.
+
+---
+
+

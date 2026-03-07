@@ -1,0 +1,61 @@
+{
+  "name": "Brayan Mauricio Rodriguez Garzón",
+  "title": "Data Scientist & Matemático Aplicado",
+  "headline": "Coordenador de Estratégia e Analytics | PhD em Estatística (USP) | ML, Big Data & IA Aplicada",
+  "bio": "Matemático e Cientista de Dados com mais de 10 anos de experiência em modelagem estatística, machine learning e análise de dados em larga escala. Atualmente coordenando equipes de Analytics na Pefisa (Grupo Pernambucanas) e atuando como orientador acadêmico no MBA de Data Science da Poli USP. Doutorando em Estatística no ICMC-USP, com sólida trajetória acadêmica (Mestrado UFG, créditos de Doutorado UFRJ, MBA USP/CeMEAI). Apaixonado por transformar dados complexos em decisões de negócio com impacto real.",
+  "location": "São Paulo, SP — Brasil",
+  "contacts": {
+    "linkedin": "https://www.linkedin.com/in/brayan-mauricio-rodriguez-garzon/",
+    "github": "https://github.com/bramau9010",
+    "email": "",
+    "site": "https://sites.google.com/view/brayanmauricio/about-me"
+  },
+  "education": [
+    {
+      "degree": "PhD em Estatística",
+      "institution": "USP — Instituto de Ciências Matemáticas e de Computação (ICMC)",
+      "period": "Em curso (previsão 2030)",
+      "status": "in_progress",
+      "location": "São Carlos, SP"
+    },
+    {
+      "degree": "MBA em Data Science e Analytics",
+      "institution": "USP / CeMEAI",
+      "period": "2022",
+      "status": "completed",
+      "location": "São Carlos, SP",
+      "highlight": "Projeto: Análise de Tendências do YouTube no Brasil"
+    },
+    {
+      "degree": "Doutorado em Matemática (créditos concluídos)",
+      "institution": "UFRJ — Universidade Federal do Rio de Janeiro",
+      "period": "2018 – 2022",
+      "status": "incomplete",
+      "location": "Rio de Janeiro, RJ",
+      "note": "Análise matemática de equações e fluidos — créditos concluídos, sem defesa de tese"
+    },
+    {
+      "degree": "Mestrado em Matemática",
+      "institution": "UFG — Universidade Federal de Goiás",
+      "period": "2016",
+      "status": "completed",
+      "location": "Goiânia, GO"
+    },
+    {
+      "degree": "Bacharelado em Matemática",
+      "institution": "Universidad Distrital Francisco José de Caldas",
+      "period": "2014",
+      "status": "completed",
+      "location": "Bogotá, Colômbia"
+    }
+  ],
+  "interests": [
+    "Estatística Aplicada",
+    "Machine Learning",
+    "Pesquisa Operacional",
+    "Matemática Aplicada",
+    "Big Data",
+    "Inteligência Artificial",
+    "Análise de Séries Temporais"
+  ]
+}

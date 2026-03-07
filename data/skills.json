@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "name": "Core",
+      "icon": "💻",
+      "skills": [
+        { "name": "Python", "level": "expert" },
+        { "name": "Jupyter Notebook", "level": "expert" },
+        { "name": "SQL", "level": "expert" },
+        { "name": "Git", "level": "advanced" },
+        { "name": "Linux", "level": "advanced" }
+      ]
+    },
+    {
+      "name": "ML / AI",
+      "icon": "🤖",
+      "skills": [
+        { "name": "Scikit-learn", "level": "expert" },
+        { "name": "TensorFlow / Keras", "level": "advanced" },
+        { "name": "Deep Learning", "level": "advanced" },
+        { "name": "ARIMAX / Time Series", "level": "expert" },
+        { "name": "Feature Engineering", "level": "expert" },
+        { "name": "MLflow", "level": "intermediate" }
+      ]
+    },
+    {
+      "name": "Big Data",
+      "icon": "📊",
+      "skills": [
+        { "name": "PySpark", "level": "expert" },
+        { "name": "GCP (Google Cloud Platform)", "level": "advanced" },
+        { "name": "Cloudera", "level": "advanced" },
+        { "name": "HPCC / ECL", "level": "intermediate" },
+        { "name": "Airflow", "level": "intermediate" }
+      ]
+    },
+    {
+      "name": "Estatística & Modelagem",
+      "icon": "📐",
+      "skills": [
+        { "name": "Modelagem Estatística Avançada", "level": "expert" },
+        { "name": "IFRS 9 / Risco de Crédito", "level": "expert" },
+        { "name": "Pesquisa Operacional", "level": "advanced" },
+        { "name": "Análise de Séries Temporais", "level": "expert" },
+        { "name": "Matemática Aplicada", "level": "expert" }
+      ]
+    },
+    {
+      "name": "Liderança",
+      "icon": "🎯",
+      "skills": [
+        { "name": "Scrum", "level": "advanced" },
+        { "name": "Kanban", "level": "advanced" },
+        { "name": "Gestão de Times Técnicos", "level": "advanced" },
+        { "name": "Comunicação com Stakeholders", "level": "expert" },
+        { "name": "Mentoria Acadêmica", "level": "expert" }
+      ]
+    }
+  ]
+}

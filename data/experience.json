@@ -1,0 +1,67 @@
+{
+  "experiences": [
+    {
+      "company": "Pefisa (Grupo Pernambucanas)",
+      "role": "Coordenador de Estratégia e Analytics",
+      "period": "2024 – Atual",
+      "start": "2024-01",
+      "end": null,
+      "location": "São Paulo, SP",
+      "type": "full_time",
+      "bullets": [
+        "Liderança técnica de equipes multidisciplinares com metodologias Scrum e Kanban",
+        "Desenvolvimento e manutenção de pipelines de dados com PySpark (Cloudera) e GCP — 1,5M registros/dia",
+        "Criação de modelos preditivos para otimização de negócio — +6% de eficiência de contato (CPC)",
+        "Tradução de resultados de modelos estatísticos complexos para stakeholders não-técnicos",
+        "Gestão estratégica de analytics para tomada de decisão de negócio"
+      ],
+      "technologies": ["PySpark", "GCP", "Cloudera", "Python", "SQL", "Scrum", "Kanban"]
+    },
+    {
+      "company": "Poli USP Pro",
+      "role": "Orientador Acadêmico — MBA Data Science & Analytics",
+      "period": "2024 – Atual",
+      "start": "2024-01",
+      "end": null,
+      "location": "São Paulo, SP",
+      "type": "part_time",
+      "bullets": [
+        "Mentoria em projetos finais de Deep Learning e IA aplicada",
+        "Validação de metodologias de treinamento e deploy de modelos de ML",
+        "Orientação de alunos do MBA em Data Science e Analytics da Poli USP"
+      ],
+      "technologies": ["Deep Learning", "Machine Learning", "Python", "TensorFlow"]
+    },
+    {
+      "company": "Pefisa (Grupo Pernambucanas)",
+      "role": "Analista de Modelagem Estatística Sênior",
+      "period": "2022 – 2024",
+      "start": "2022-01",
+      "end": "2024-01",
+      "location": "São Paulo, SP",
+      "type": "full_time",
+      "bullets": [
+        "Modelos de Time Series (ARIMAX) e Redes Neurais para previsão de demanda e metas",
+        "Modelagem de risco e conformidade IFRS 9 — intercepto aleatório e regressões complexas",
+        "Ciclo completo de ML: EDA, feature engineering, treinamento, monitoramento (KS, AUC, Gini)",
+        "Desenvolvimento de scorecard de crédito e modelos de propensão"
+      ],
+      "technologies": ["Python", "ARIMAX", "Scikit-learn", "PySpark", "SQL", "IFRS 9"]
+    },
+    {
+      "company": "UFRJ / UEPG",
+      "role": "Professor Universitário — Matemática e Estatística",
+      "period": "2018 – 2022",
+      "start": "2018-01",
+      "end": "2022-01",
+      "location": "Rio de Janeiro, RJ / Ponta Grossa, PR",
+      "type": "full_time",
+      "bullets": [
+        "Docência em disciplinas de Cálculo, Combinatória e Estatística",
+        "Pesquisa em análise matemática de equações diferenciais e mecânica de fluidos",
+        "Capacidade comprovada de comunicar conceitos matemáticos complexos para diferentes níveis de conhecimento"
+      ],
+      "technologies": ["Matemática", "Estatística", "Pesquisa Acadêmica"]
+    }
+  ]
+}
